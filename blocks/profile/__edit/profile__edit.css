@@ -1,0 +1,25 @@
+.profile__edit {
+  margin: 0 0 0 18px;
+  padding: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #FFFFFF;
+  background: url(../../../images/svg/edit.svg) center no-repeat;
+  background-size: 10px 10px;
+}
+
+.profile__edit:hover {
+  opacity: 0.6;
+}
+
+/*--------------MEDIA----------------*/
+/* меньше 918 */
+@media (max-width: 917px) {
+  .profile__edit {
+    width: 18px;
+    height: 18px;
+    background-size: 7px 7px;
+    margin: 0 0 0 10px;
+  }
+}

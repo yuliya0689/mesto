@@ -1,0 +1,15 @@
+.popup {
+  /*центрируем по видимой части страницы начало*/
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  /*центрируем по видимой части страницы конец*/
+  z-index: 2; /*поверх всего*/
+  display: none; /*при загрузке скрыть*/
+  background: rgba(0, 0, 0, .5); /*прозрачная плашка*/
+}
+

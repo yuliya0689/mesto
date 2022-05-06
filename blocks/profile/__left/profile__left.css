@@ -1,0 +1,12 @@
+.profile__left {
+  display: flex;
+}
+
+/*--------------MEDIA----------------*/
+@media (max-width: 479px) {
+  .profile__left {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

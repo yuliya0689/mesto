@@ -1,0 +1,11 @@
+.footer {
+  margin-bottom: 60px;
+}
+
+/*--------------MEDIA----------------*/
+/* меньше 918 */
+@media (max-width: 917px) {
+  .footer {
+    margin: 0 19px 36px;
+  }
+}
