@@ -11,8 +11,7 @@
 }
 
 /*--------------MEDIA----------------*/
-/* меньше 768 */
-@media (max-width: 767px) {
+@media (max-width: 779px) {
   .profile__name {
     text-align: center;
     font-size: 27px;

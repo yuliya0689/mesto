@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Mesto</title>
+    <link rel="stylesheet" href="pages/index.css">
+    <title>Mесто</title>
 </head>
 <body class="page">
   <div class="popup">
-    <form method="post" action="#" class="popup__container">
-        <a href="#" class="popup__close"></a>
-        <p class="popup__title">Редактировать профиль</p>
-        <input type="text" value="" class="popup__name" name="popup__name">
-        <input type="text" value="" class="popup__profession" name="popup__profession">
+    <div class="popup__container">
+      <button aria-label="close" type="button" class="popup__close"></button>
+      <h3 class="popup__title">Редактировать профиль</h3>
+      <form method="post" action="#" name="popup__form" class="popup__form">
+        <input type="text" value="" class="popup__input popup__input_type_name" name="popup__name">
+        <input type="text" value="" class="popup__input popup__input_type_profession" name="popup__profession">
         <input type="submit" value="Сохранить" class="popup__submit">
-    </form>
+      </form>
+    </div>
   </div>
+
   <div class="page__wrap">
     <header class="header">
       <a href="/" class="header__logo"></a>
     </header>
     <main>
       <section class="profile">
-        <div class="profile__left">
-          <img src="images/avatar.jpg" alt="Фотография Жак-Ив Кусто." class="profile__avatar">
-          <div class="profile__caption">
-            <div class="profile__set">
-              <p class="profile__name">Жак-Ив Кусто</p><a href="#" class="profile__edit"></a>
-            </div>
-            <p class="profile__profession">Исследователь океана</p>
+        <img src="images/avatar.jpg" alt="Фотография Жак-Ив Кусто." class="profile__avatar">
+        <div class="profile__caption">
+          <div class="profile__set">
+            <h1 class="profile__name">Жак-Ив Кусто</h1><button aria-label="edit" type="button" class="profile__edit"></button>
           </div>
+          <p class="profile__profession">Исследователь океана</p>
         </div>
-        <div class="profile__right">
-          <a href="#" class="profile__add-button"></a>
-        </div>
+        <button aria-label="Add" type="button" class="profile__add-button"></button>
       </section>
       <section>
         <ul class="elements">
@@ -42,42 +41,42 @@
             <img src="images/karachaevsk.jpg" alt="Фото Карачаевск." class="elements__image">
             <div class="elements__caption">
               <h2 class="elements__text">Карачаевск</h2>
-              <a href="#" class="elements__like"></a>
+              <button aria-label="like" type="button" href="#" class="elements__like"></button>
             </div>
           </li>
           <li class="elements__element">
             <img src="images/elbrus.jpg" alt="Фото Гора Эльбрус." class="elements__image">
             <div class="elements__caption">
               <h2 class="elements__text">Гора Эльбрус</h2>
-              <a href="#" class="elements__like"></a>
+              <button aria-label="like" type="button" href="#" class="elements__like"></button>
             </div>
           </li>
           <li class="elements__element">
             <img src="images/dombaj.jpg" alt="Фото Домбай." class="elements__image">
             <div class="elements__caption">
               <h2 class="elements__text">Домбай</h2>
-              <a href="#" class="elements__like"></a>
+              <button aria-label="like" type="button" href="#" class="elements__like"></button>
             </div>
           </li>
           <li class="elements__element">
             <img src="images/elbrus.jpg" alt="Фото Гора Эльбрус." class="elements__image">
             <div class="elements__caption">
               <h2 class="elements__text">Гора Эльбрус</h2>
-              <a href="#" class="elements__like"></a>
+              <button aria-label="like" type="button" href="#" class="elements__like"></button>
             </div>
           </li>
           <li class="elements__element">
             <img src="images/dombaj.jpg" alt="Фото Домбай." class="elements__image">
             <div class="elements__caption">
               <h2 class="elements__text">Домбай</h2>
-              <a href="#" class="elements__like"></a>
+              <button aria-label="like" type="button" href="#" class="elements__like"></button>
             </div>
           </li>
           <li class="elements__element">
             <img src="images/karachaevsk.jpg" alt="Фото Карачаево-Черкесия." class="elements__image">
             <div class="elements__caption">
               <h2 class="elements__text">Карачаево-Черкесия</h2>
-              <a href="#" class="elements__like"></a>
+              <button aria-label="like" type="button" href="#" class="elements__like"></button>
             </div>
           </li>
         </ul>

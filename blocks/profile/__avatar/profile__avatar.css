@@ -3,13 +3,12 @@
   width: 120px;
   height: 120px;
   display: flex; /*убрать отступ по умолчанию*/
-  margin-right: 29px;
-  margin: 0 29px 22px 0;
 }
 
 /*--------------MEDIA----------------*/
+/*
 @media (max-width: 479px) {
   .profile__avatar {
     margin-right: 0;
   }
-}
+}*/

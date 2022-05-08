@@ -1,7 +1,9 @@
 .profile {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 120px calc(100% - 332px) 150px;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 47px;
 }
 
 /*--------------MEDIA----------------*/
@@ -13,15 +15,9 @@
 
 @media (max-width: 779px) {
   .profile {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 0 19px 47px;
-  }
-}
-
-@media (max-width: 479px) {
-  .profile {
-    align-items: center;
-    margin: 0 19px 36px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    justify-items: center;
+    margin-bottom: 36px;
   }
 }

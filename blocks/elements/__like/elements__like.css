@@ -6,6 +6,8 @@
   background: url(../../../images/svg/like.svg) center no-repeat;
   background-size: 22px 19px;
   align-self: center;
+  border: none;
+  cursor: pointer;
 }
 
 .elements__like:hover {

@@ -1,11 +1,9 @@
 .profile__set {
   margin: 0 0 16px 0;
-  padding: 0;
   display: flex;
-  align-items: baseline;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 779px) {
   .profile__set {
     margin: 0 0 14px 30px;
   }

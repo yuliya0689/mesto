@@ -8,11 +8,15 @@
   background-size: 142px 33px;
 }
 
+.header__logo:hover {
+  opacity: 0.6;
+}
+
 /*--------------MEDIA----------------*/
 /* меньше 918 */
 @media (max-width: 917px) {
   .header__logo {
-    margin: 28px 27px 60px;
+    margin: 28px 27px 69px;
     width: 104px;
     height: 25px;
     background-size: 104px 25px;

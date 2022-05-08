@@ -4,9 +4,10 @@
   top: -40px;
   background: url(../../../images/svg/close.svg) center no-repeat;
   background-size: 32px 32px;
-  display: block;
   width: 32px;
   height: 32px;
+  cursor: pointer;
+  border: none;
 }
 
 .popup__close:hover {

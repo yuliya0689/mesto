@@ -1,8 +1,8 @@
 // Находим форму в DOM
 let formElement = document.querySelector('.popup__container');
 // Находим поля формы в DOM
-let nameInput = formElement.querySelector('.popup__name');
-let jobInput = formElement.querySelector('.popup__profession');
+let nameInput = formElement.querySelector('.popup__input_type_name');
+let jobInput = formElement.querySelector('.popup__input_type_profession');
 // Находим кнопку закрытия формы в DOM
 let closeForm = formElement.querySelector('.popup__close');
 
@@ -12,6 +12,10 @@ let popup = document.querySelector('.popup');
 // Находим кнопку редактирования в DOM
 let profileEdit = document.querySelector('.profile__edit');
 
+//берем значения name и job из верстки
+let profileName = document.querySelector('.profile__name');
+let profileProfession = document.querySelector('.profile__profession');
+
 // Обработчик «отправки» формы
 function formSubmitHandler (evt) {
   evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
@@ -19,10 +23,6 @@ function formSubmitHandler (evt) {
   // Значение полей jobInput и nameInput из свойства value
   let name = nameInput.value;
   let job = jobInput.value;
-
-  // Элементы, куда должны быть вставлены значения полей
-  let profileName = document.querySelector('.profile__name');
-  let profileProfession = document.querySelector('.profile__profession');
 
   // Вставка новых значений с помощью textContent
   profileName.textContent = name;
@@ -35,10 +35,6 @@ function formSubmitHandler (evt) {
 function popupOpen() {
   //отобразили попап с формой
   popup.classList.add('popup_opened');
-
-  //берем значения name и job из верстки
-  let profileName = document.querySelector('.profile__name');
-  let profileProfession = document.querySelector('.profile__profession');
 
   //добавляем значения name и job в форму
   nameInput.value = profileName.textContent;
