@@ -1,0 +1,11 @@
+.header {
+  border-bottom: 1px solid rgba(54, 54, 54, 0.7);
+  margin-bottom: 36px;
+}
+
+/*--------------MEDIA----------------*/
+@media (max-width: 917px) {
+  .header {
+    margin-bottom: 38px;
+  }
+}
